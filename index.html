@@ -13,11 +13,19 @@
 <body>
     <main>
         <!--Could not change image using this commented code-->
-        <img class="product-img"
+        <div class="product-img-container">
+            <picture>
+                <source srcset="./images/image-product-desktop.jpg" media="(min-width: 48rem)" />
+                <img class="product-img"
+                     src="./images/image-product-mobile.jpg"
+                     alt="bottle of perfume image" />
+            </picture>
+        </div>
+        <!--<img class="product-img"
         src="./images/image-product-mobile.jpg"
         alt="Product image"
         srcset="./images/image-product-desktop.jpg 768w,
-                ./images/image-product-mobile.jpg  375w" />
+                ./images/image-product-mobile.jpg  375w" />-->
         <!--<img class="product-img"
              src="./images/image-product-desktop.jpg"
              alt="Product image" />-->
